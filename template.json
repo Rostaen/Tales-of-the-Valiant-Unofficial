@@ -1,28 +1,53 @@
 {
   "Actor": {
-    "types": ["character", "npc"],
+    "types": [
+      "character",
+      "npc",
+      "hazard",
+      "loot",
+      "familiar",
+      "party",
+      "vehicle"
+    ],
     "templates": {
-      "base": {
-        "health": {
-          "value": 10,
-          "min": 0,
-          "max": 10
+      "common": {
+        "attributes":{
+          "hp": {
+            "value": 0,
+            "temp": 0
+          },
+          "speed": {
+            "value": 25,
+            "otherSpeeds": []
+          }
         },
-        "power": {
-          "value": 5,
-          "min": 0,
-          "max": 5
+        "initiative": {
+          "statistic": "dex"
         },
-        "biography": ""
+        "details": {
+          "languages": {
+            "value": [],
+            "details": ""
+          },
+          "level":{
+            "value": 1
+          }
+        }
       }
     },
+    "htmlFields":[
+      "details.biography.appearance",
+      "details.biography.backstory",
+      "details.biography.campaignNotes",
+      "details.biography.allies",
+      "details.biography.enemies",
+      "details.biography.organizations",
+      "details.description",
+      "details.privateNotes",
+      "details.publicNotes"
+    ],
     "character": {
-      "templates": ["base"],
-      "attributes": {
-        "level": {
-          "value": 1
-        }
-      },
+      "templates": ["common"],
       "abilities": {
         "str": {
           "value": 10
@@ -42,6 +67,114 @@
         "cha": {
           "value": 10
         }
+      },
+      "details": {
+        "biography": {
+          "appearance": "",
+          "backstory": "",
+          "birthPlace": "",
+          "attitude": "",
+          "beliefs": "",
+          "likes": "",
+          "dislikes": "",
+          "campaignNotes": "",
+          "allies": "",
+          "enemies": "",
+          "organizations": "",
+          "visibility": {
+            "appearance": true,
+            "backstory": false,
+            "personality": false,
+            "campaign": false
+          }
+        },
+        "keyability":{
+          "value": "str"
+        },
+        "xp":{
+          "value": 0,
+          "min": 0
+        },
+        "age":{
+          "value": ""
+        },
+        "height":{
+          "value": ""
+        },
+        "weight":{
+          "value": ""
+        },
+        "gender":{
+          "value": ""
+        }
+      },
+      "skills":{
+        "acr": {
+            "rank": 0
+        },
+        "ani": {
+            "rank": 0
+        },
+        "arc": {
+            "rank": 0
+        },
+        "ath": {
+            "rank": 0
+        },
+        "dec": {
+            "rank": 0
+        },
+        "his": {
+            "rank": 0
+        },
+        "ins": {
+            "rank": 0
+        },
+        "int": {
+            "rank": 0
+        },
+        "inv": {
+            "rank": 0
+        },
+        "med": {
+            "rank": 0
+        },
+        "nat": {
+            "rank": 0
+        },
+        "per": {
+            "rank": 0
+        },
+        "prf": {
+            "rank": 0
+        },
+        "prs": {
+            "rank": 0
+        },
+        "rel": {
+            "rank": 0
+        },
+        "soh": {
+            "rank": 0
+        },
+        "ste": {
+            "rank": 0
+        },
+        "sur": {
+            "rank": 0
+        }
+      },
+      "resources": {
+        "luckPoints":{
+          "value": 0,
+          "max": 5
+        },
+        "classPoints":{
+          "value": 0
+        },
+        "otherPoints":{
+          "value": 0
+        }
       }
     },
     "npc": {
@@ -50,7 +183,7 @@
     }
   },
   "Item": {
-    "types": ["item", "feature", "spell"],
+    "types": ["item", "feature", "spell", "condition"],
     "templates": {
       "base": {
         "description": ""
@@ -68,6 +201,9 @@
     "spell": {
       "templates": ["base"],
       "spellLevel": 1
+    },
+    "condition": {
+      "templates": ["base"]
     }
   }
 }
