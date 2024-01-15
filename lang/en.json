@@ -1,22 +1,22 @@
 {
-  "BOILERPLATE.AbilityStr": "Strength",
-  "BOILERPLATE.AbilityCon": "Constitution",
-  "BOILERPLATE.AbilityDex": "Dexterity",
-  "BOILERPLATE.AbilityInt": "Intelligence",
-  "BOILERPLATE.AbilityWis": "Wisdom",
-  "BOILERPLATE.AbilityCha": "Charisma",
+  "TOTV-UO.AbilityStr": "Strength",
+  "TOTV-UO.AbilityCon": "Constitution",
+  "TOTV-UO.AbilityDex": "Dexterity",
+  "TOTV-UO.AbilityInt": "Intelligence",
+  "TOTV-UO.AbilityWis": "Wisdom",
+  "TOTV-UO.AbilityCha": "Charisma",
 
-  "BOILERPLATE.AbilityStrAbbr": "str",
-  "BOILERPLATE.AbilityConAbbr": "con",
-  "BOILERPLATE.AbilityDexAbbr": "dex",
-  "BOILERPLATE.AbilityIntAbbr": "int",
-  "BOILERPLATE.AbilityWisAbbr": "wis",
-  "BOILERPLATE.AbilityChaAbbr": "cha",
+  "TOTV-UO.AbilityStrAbbr": "str",
+  "TOTV-UO.AbilityConAbbr": "con",
+  "TOTV-UO.AbilityDexAbbr": "dex",
+  "TOTV-UO.AbilityIntAbbr": "int",
+  "TOTV-UO.AbilityWisAbbr": "wis",
+  "TOTV-UO.AbilityChaAbbr": "cha",
 
-  "BOILERPLATE.EffectCreate": "Create Effect",
-  "BOILERPLATE.EffectToggle": "Toggle Effect",
-  "BOILERPLATE.EffectEdit": "Edit Effect",
-  "BOILERPLATE.EffectDelete": "Delete Effect",
+  "TOTV-UO.EffectCreate": "Create Effect",
+  "TOTV-UO.EffectToggle": "Toggle Effect",
+  "TOTV-UO.EffectEdit": "Edit Effect",
+  "TOTV-UO.EffectDelete": "Delete Effect",
 
-  "BOILERPLATE.Add": "Add"
+  "TOTV-UO.Add": "Add"
 }

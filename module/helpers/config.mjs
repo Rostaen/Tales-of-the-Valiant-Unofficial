@@ -1,23 +1,23 @@
-export const BOILERPLATE = {};
+export const TOTV-UO = {};
 
 /**
  * The set of Ability Scores used within the sytem.
  * @type {Object}
  */
- BOILERPLATE.abilities = {
-  "str": "BOILERPLATE.AbilityStr",
-  "dex": "BOILERPLATE.AbilityDex",
-  "con": "BOILERPLATE.AbilityCon",
-  "int": "BOILERPLATE.AbilityInt",
-  "wis": "BOILERPLATE.AbilityWis",
-  "cha": "BOILERPLATE.AbilityCha"
+ TOTV-UO.abilities = {
+  "str": "TOTV-UO.AbilityStr",
+  "dex": "TOTV-UO.AbilityDex",
+  "con": "TOTV-UO.AbilityCon",
+  "int": "TOTV-UO.AbilityInt",
+  "wis": "TOTV-UO.AbilityWis",
+  "cha": "TOTV-UO.AbilityCha"
 };
 
-BOILERPLATE.abilityAbbreviations = {
-  "str": "BOILERPLATE.AbilityStrAbbr",
-  "dex": "BOILERPLATE.AbilityDexAbbr",
-  "con": "BOILERPLATE.AbilityConAbbr",
-  "int": "BOILERPLATE.AbilityIntAbbr",
-  "wis": "BOILERPLATE.AbilityWisAbbr",
-  "cha": "BOILERPLATE.AbilityChaAbbr"
+TOTV-UO.abilityAbbreviations = {
+  "str": "TOTV-UO.AbilityStrAbbr",
+  "dex": "TOTV-UO.AbilityDexAbbr",
+  "con": "TOTV-UO.AbilityConAbbr",
+  "int": "TOTV-UO.AbilityIntAbbr",
+  "wis": "TOTV-UO.AbilityWisAbbr",
+  "cha": "TOTV-UO.AbilityChaAbbr"
 };
