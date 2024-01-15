@@ -1,7 +1,7 @@
 {
-  "name": "boilerplate",
+  "name": "totv-uo",
   "version": "1.0.0",
-  "description": "CSS compiler for the Boilerplate system",
+  "description": "CSS compiler for the TotV-UO system",
   "scripts": {
     "build": "gulp build",
     "compile": "gulp css",
