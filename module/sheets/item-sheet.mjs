@@ -7,7 +7,7 @@ export class TotV-UOItemSheet extends ItemSheet {
   /** @override */
   static get defaultOptions() {
     return mergeObject(super.defaultOptions, {
-      classes: ["totv-uo", "sheet", "item"],
+      classes: ["totvuo", "sheet", "item"],
       width: 520,
       height: 480,
       tabs: [{ navSelector: ".sheet-tabs", contentSelector: ".sheet-body", initial: "description" }]
@@ -16,7 +16,7 @@ export class TotV-UOItemSheet extends ItemSheet {
 
   /** @override */
   get template() {
-    const path = "systems/totv-uo/templates/item";
+    const path = "systems/totvuo/templates/item";
     // Return a single sheet for all item types.
     // return `${path}/item-sheet.html`;
 

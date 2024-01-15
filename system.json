@@ -1,6 +1,6 @@
 {
-  "id": "totv-uo",
-  "title": "TotV-UO",
+  "id": "totvuo",
+  "title": "Tales of the Valiant Unofficial",
   "description": "The Tales of the Valiant (Unofficial) system for FoundryVTT!",
   "authors": [
     {
@@ -16,8 +16,8 @@
   "media": [
     {
       "type": "setup",
-      "url": "systems/totv-uo/assets/anvil-impact.png",
-      "thumbnail": "systems/totv-uo/assets/anvil-impact.png"
+      "url": "systems/totvuo/assets/anvil-impact.png",
+      "thumbnail": "systems/totvuo/assets/anvil-impact.png"
     }
   ],
   "version": "0.0.1",
@@ -25,8 +25,8 @@
     "minimum": 11,
     "verified": "11.315"
   },
-  "esmodules": ["module/totv-uo.mjs"],
-  "styles": ["css/totv-uo.css"],
+  "esmodules": ["module/totvuo.mjs"],
+  "styles": ["css/totvuo.css"],
   "languages": [
     {
       "lang": "en",
@@ -39,7 +39,7 @@
   "socket": false,
   "manifest": "https://github.com/Rostaen/Tales-of-the-Valiant-Unofficial/blob/main/system.json",
   "download": "This must link to a .zip file of the current version",
-  "background": "systems/totv-uo/assets/anvil-impact.png",
+  "background": "systems/totvuo/assets/anvil-impact.png",
   "gridDistance": 5,
   "gridUnits": "ft",
   "primaryTokenAttribute": "health",
