@@ -178,16 +178,409 @@
       }
     },
     "npc": {
-      "templates": ["base"],
+      "templates": [
+        "common"
+      ],
+      "abilities":{
+        "str":{
+          "mod": 0
+        },
+        "dex":{
+          "mod": 0
+        },
+        "con":{
+          "mod": 0
+        },
+        "int":{
+          "mod": 0
+        },
+        "wis":{
+          "mod": 0
+        },
+        "cha":{
+          "mod": 0
+        }
+      },
+      "attributes":{
+        "ac":{
+          "value": 10,
+          "details": ""
+        },
+        "hp":{
+          "value": 10,
+          "max": 10,
+          "details": ""
+        },
+        "allSaves":{
+          "value": ""
+        },
+        "speed":{
+          "details": ""
+        }
+      },
+      "perception":{
+        "details":"",
+        "mod": 0,
+        "senses": [],
+        "vision": true
+      },
+      "stealth":{
+        "details":"",
+        "mod": 0
+      },
+      "traits":{
+        "value":[],
+        "rarity": "common",
+        "size":{
+          "value": "med"
+        }
+      },
+      "details":{
+        "blurb": "",
+        "publicNotes": "",
+        "privateNotes": "",
+        "publication": {
+          "title": "",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        }
+      },
       "cr": 0
+    },
+    "hazard":{
+      "template": [],
+      "saves": {
+        "strength": {
+            "value": 0,
+            "saveDetail": ""
+        },
+        "dexterity": {
+            "value": 0,
+            "saveDetail": ""
+        },
+        "constitution": {
+            "value": 0,
+            "saveDetail": ""
+        },
+        "intelligence": {
+            "value": 0,
+            "saveDetail": ""
+        },
+        "wisdom": {
+            "value": 0,
+            "saveDetail": ""
+        },
+        "charisma": {
+            "value": 0,
+            "saveDetail": ""
+        }
+      },
+      "attributes": {
+          "ac": {
+              "value": 0
+          },
+          "hp": {
+              "value": 0,
+              "max": 0,
+              "temp": 0,
+              "details": ""
+          },
+          "hardness": 0,
+          "stealth": {
+              "value": 0,
+              "details": ""
+          },
+          "emitsSound": "encounter"
+      },
+      "details": {
+          "isComplex": false,
+          "cr": {
+              "value": 1
+          },
+          "disable": "",
+          "description": "",
+          "reset": "",
+          "routine": "",
+          "publication": {
+              "title": "",
+              "authors": "",
+              "license": "OGL",
+              "remaster": false
+          }
+      },
+      "statusEffects": [],
+      "traits": {
+          "value": [],
+          "rarity": "common",
+          "size": {
+              "value": "med"
+          }
+      },
+      "_migration": {
+          "version": null,
+          "previous": null
+      }
+    },
+    "loot": {
+        "templates": [],
+        "attributes": {},
+        "details": {
+            "description": "",
+            "level": {
+                "value": 0
+            }
+        },
+        "lootSheetType": "Loot",
+        "hiddenWhenEmpty": false,
+        "_migration": {
+            "version": null,
+            "previous": null
+        }
+    },
+    "familiar": {
+        "templates": [],
+        "master": {
+            "id": null,
+            "ability": null
+        },
+        "abilities":{
+          "str":{
+            "mod": 0
+          },
+          "dex":{
+            "mod": 0
+          },
+          "con":{
+            "mod": 0
+          },
+          "int":{
+            "mod": 0
+          },
+          "wis":{
+            "mod": 0
+          },
+          "cha":{
+            "mod": 0
+          }
+        },
+        "attributes": {
+            "hp": {
+                "value": 5,
+                "temp": 0
+            }
+        },
+        "details": {
+            "creature": {
+                "value": ""
+            }
+        },
+        "resources": {},
+        "_migration": {
+            "version": null,
+            "previous": null
+        }
+    },
+    "vehicle": {
+        "templates": [],
+        "attributes": {
+            "ac": {
+                "value": 10,
+                "check": 0,
+                "details": ""
+            },
+            "hardness": 0,
+            "hp": {
+                "value": 10,
+                "max": 10,
+                "temp": 0,
+                "details": ""
+            },
+            "collisionDC": {
+                "value": 0
+            },
+            "collisionDamage": {
+                "value": ""
+            },
+            "immunities": [
+                {
+                    "type": "object-immunities"
+                }
+            ]
+        },
+        "saves": {
+            "constitution": {
+                "value": 0,
+                "saveDetail": ""
+            }
+        },
+        "details": {
+            "description": "",
+            "level": {
+                "value": 1
+            },
+            "price": 0,
+            "space": {
+                "long": 10,
+                "wide": 10,
+                "high": 5
+            },
+            "crew": "1 pilot",
+            "passengers": "",
+            "pilotingCheck": "",
+            "speed": 0,
+            "publication": {
+                "title": "",
+                "authors": "",
+                "license": "OGL",
+                "remaster": false
+            }
+        },
+        "traits": {
+            "value": [],
+            "rarity": "common",
+            "size": {
+                "value": "lg"
+            }
+        },
+        "_migration": {
+            "version": null,
+            "previous": null
+        }
     }
   },
   "Item": {
-    "types": ["item", "feature", "spell", "condition"],
+    "types": [
+      "action",
+      "affliction",
+      "armor",
+      "background",
+      "backpack",
+      "book",
+      "campaignFeature",
+      "class",
+      "condition",
+      "consumable",
+      "deity",
+      "effect",
+      "equipment",
+      "feat",
+      "heritage",
+      "kit",
+      "lineage",
+      "lore",
+      "melee",
+      "shield",
+      "spell",
+      "spellcastingEntry",
+      "subClass",
+      "treasure",
+      "weapon"
+    ],
     "templates": {
-      "base": {
-        "description": ""
+      "common": {
+        "description": {
+          "gm": "",
+          "value": ""
+        },
+        "rules": [],
+        "slug": null,
+        "_migration":{
+          "version": null,
+          "lastMigration": null
+        },
+        "traits":{
+          "otherTags":[]
+        },
+        "publications":{
+          "title": "",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        }
+      },
+      "traits":{
+        "traits":{
+          "value":[]
+        }
+      },
+      "rarity":{
+        "traits":{
+          "rarity": "common"
+        }
+      },
+      "physical":{
+        "cr":{
+          "value": 0
+        },
+        "traits":{
+          "value": [],
+          "rarity":"common"
+        },
+        "quantity": 1,
+        "baseItem": null,
+        "weight":{
+          "value": 1
+        },
+        "hp":{
+          "value": 0,
+          "max": 0
+        },
+        "price": {
+          "value": {}
+        },
+        "equipped": {
+          "carryType": "worn"
+        },
+        "containerId": null,
+        "size": "med",
+        "material": {
+          "type": null,
+          "grade": null
+        },
+        "identification":{
+          "status": "identified",
+          "unidentified":{
+            "name": "",
+            "img": "",
+            "data": {
+              "description": {
+                "value": ""
+              }
+            }
+          },
+          "misidentified": {}
+        }
+      },
+      "itemLevel": {
+        "level": {
+          "value": 1
+        }
       }
+    },
+    "htmlFields":[
+      "description.gm",
+      "description.value",
+      "identification.data.description.value"
+    ],
+    "affliction":{
+      "templates":[
+        "common",
+        "itemLevel",
+        "traits"
+      ],
+      "duration":{
+        "value": -1,
+        "unit": "unlimited",
+        "expiry": null
+      },
+      "save": {
+        "type": "constitution",
+        "value": 0
+      },
+      "stage": 1,
+      "stages": {},
+      "context": null
     },
     "item": {
       "templates": ["base"],
