@@ -582,21 +582,556 @@
       "stages": {},
       "context": null
     },
-    "item": {
-      "templates": ["base"],
-      "quantity": 1,
-      "weight": 0,
-      "formula": "d20 + @str.mod + ceil(@lvl / 2)"
+    "backpack": {
+      "templates": [
+          "common",
+          "physical"
+      ],
+      "bulk": {
+          "value": 0,
+          "heldOrStowed": 0.1,
+          "capacity": 10,
+          "ignored": 0
+      },
+      "collapsed": false,
+      "stowing": false,
+      "usage": {
+          "value": "worn"
+      }
     },
-    "feature": {
-      "templates": ["base"]
+    "book": {
+      "templates": [
+          "common",
+          "physical"
+      ],
+      "category": "formula",
+      "capacity": 1,
+      "contents": []
+    },
+    "treasure": {
+      "templates": [
+          "common",
+          "physical"
+      ],
+      "stackGroup": null
+    },
+    "weapon": {
+      "templates": [
+          "common",
+          "physical"
+      ],
+      "usage": {
+          "value": "held-in-one-hand"
+      },
+      "category": "simple",
+      "group": null,
+      "bonus": {
+          "value": 0
+      },
+      "damage": {
+          "dice": 1,
+          "die": "d6",
+          "damageType": "slashing"
+      },
+      "equipped": {
+          "handsHeld": 0
+      },
+      "bonusDamage": {
+          "value": 0
+      },
+      "splashDamage": {
+          "value": 0
+      },
+      "range": null,
+      "reload": {
+          "value": null
+      },
+      "specific": null,
+      "subitems": [],
+      "property1": {
+        "value": "",
+        "dice": 0,
+        "die": "",
+        "damageType": "",
+        "critDice": 0,
+        "critDie": "",
+        "critDamage": "",
+        "critDamageType": ""
+      }
+    },
+    "armor": {
+      "templates": [
+        "common",
+        "physical"
+      ],
+      "category": "light",
+      "group": null,
+      "acBonus": 0,
+      "strength": 0,
+      "dexCap": 5,
+      "checkPenalty": 0,
+      "speedPenalty": 0,
+      "subitems": []
+    },
+    "melee": {
+      "templates": [
+        "common",
+        "traits"
+      ],
+      "weaponType": {
+        "value": "melee"
+      },
+      "attack": {
+        "value": ""
+      },
+      "damageRolls": {},
+      "bonus": {
+        "value": 0
+      },
+      "attackEffects": {
+        "value": []
+      }
+    },
+    "consumable": {
+      "templates": [
+        "common",
+        "physical"
+      ],
+      "category": "other",
+      "uses": {
+        "value": 1,
+        "max": 1,
+        "autoDestroy": true
+      },
+      "damage": null,
+      "usage": {
+        "value": "held-in-one-hand"
+      },
+      "stackGroup": null,
+      "spell": null,
+      "traits": {
+        "value": [
+            "consumable"
+        ]
+      }
+    },
+    "equipment": {
+      "templates": [
+        "common",
+        "physical"
+      ],
+      "usage": {
+        "value": "held-in-one-hand"
+      },
+      "subitems": []
+    },
+    "ancestry": {
+      "templates": [
+        "common",
+        "traits",
+        "rarity"
+      ],
+      "hp": 6,
+      "size": "med",
+      "reach": 5,
+      "speed": 30,
+      "boosts": {
+        "0": {
+          "value": []
+        },
+        "1": {
+          "value": []
+        },
+        "2": {
+          "value": [
+            "str",
+            "dex",
+            "con",
+            "int",
+            "wis",
+            "cha"
+          ]
+        }
+      },
+      "languages": {
+        "value": [
+          "common"
+        ],
+        "custom": ""
+      },
+      "additionalLanguages": {
+        "count": 0,
+        "value": [],
+        "custom": ""
+      },
+      "items": {},
+      "vision": "normal"
+    },
+    "background": {
+      "story": "",
+      "templates": [
+        "common",
+        "traits",
+        "rarity"
+      ],
+      "talent": {
+        "info": "",
+        "choice": []
+      },
+      "equipment": {},
+      "additionalProficiencies": "",
+      "skillProficiency": {
+        "value": 2,
+        "type": []
+      },
+      "motivation":{
+        "1": "",
+        "2": "",
+        "3": "",
+        "4": "",
+        "5": "",
+        "6": "",
+        "7": "",
+        "8": ""
+      }
+    },
+    "campaignFeature": {
+      "templates": [
+        "common",
+        "traits",
+        "rarity"
+      ],
+      "campaign": "kingmaker",
+      "category": "kingdom-activity",
+      "actionType": {
+        "value": "passive"
+      },
+      "actions": {
+        "value": null
+      },
+      "prerequisites": {
+        "value": []
+      },
+      "location": null
+    },
+    "class": {
+      "templates": [
+        "common",
+        "traits",
+        "rarity"
+      ],
+      "keyAbility": {
+        "value": []
+      },
+      "items": {},
+      "hp": 0,
+      "proficiency": 2,
+      "trainedSkills": {
+        "value": [],
+        "additional": 0
+      },
+      "savingThrows": {
+        "strength": 0,
+        "dexterity": 0,
+        "constitution": 0,
+        "intelligence": 0,
+        "wisdom": 0,
+        "charisma": 0
+      },
+      "attacks": {
+        "simple": 0,
+        "martial": 0,
+        "advanced": 0,
+        "unarmed": 0,
+        "other": {
+          "name": "",
+          "rank": 0
+        }
+      },
+      "defenses": {
+        "unarmored": 0,
+        "light": 0,
+        "medium": 0,
+        "heavy": 0
+      },
+      "spellcasting": 0,
+      "classFeatureLevels": {
+        "value": [
+          1,2,3,4,5,6,7,8,9,10,
+          11,12,13,14,15,16,17,18,19,20
+        ]
+      },
+      "proficiencyIncreaseLevels": {
+        "value": [
+          5,
+          9,
+          13,
+          17
+        ]
+      }
+    },
+    "feat": {
+      "templates": [
+        "common",
+        "itemLevel",
+        "traits",
+        "rarity"
+      ],
+      "category": "bonus",
+      "onlyLevel1": false,
+      "maxTakable": 1,
+      "actionType": {
+        "value": "passive"
+      },
+      "actions": {
+        "value": null
+      },
+      "prerequisites": {
+        "value": []
+      },
+      "location": null
+    },
+    "heritage": {
+      "templates": [
+        "common",
+        "traits",
+        "rarity"
+      ],
+      "ancestry": null
+    },
+    "action": {
+      "templates": [
+        "common",
+        "traits"
+      ],
+      "actionType": {
+        "value": "passive"
+      },
+      "category": null,
+      "actions": {
+        "value": null
+      },
+      "deathNote": false
+    },
+    "shield": {
+      "templates": [
+        "common",
+        "physical"
+      ],
+      "acBonus": 2,
+      "specific": null,
+      "speedPenalty": 0,
+      "traits": {
+          "integrated": null
+      },
+      "subitems": []
     },
     "spell": {
-      "templates": ["base"],
-      "spellLevel": 1
+      "templates": [
+        "common",
+        "itemLevel",
+        "traits",
+        "rarity"
+      ],
+      "traits": {
+        "traditions": []
+      },
+      "requirements": "",
+      "target": {
+        "value": ""
+      },
+      "range": {
+        "value": ""
+      },
+      "area": null,
+      "time": {
+        "value": "2"
+      },
+      "duration": {
+        "value": "",
+        "sustained": false
+      },
+      "damage": {},
+      "defense": null,
+      "cost": {
+        "value": ""
+      },
+      "location": {
+        "value": null
+      },
+      "counteraction": false
+    },
+    "spellcastingEntry": {
+      "templates": [
+        "common"
+      ],
+      "ability": {
+        "value": "cha"
+      },
+      "spelldc": {
+        "value": 0,
+        "dc": 0
+      },
+      "tradition": {
+        "value": "arcane"
+      },
+      "prepared": {
+        "value": "innate"
+      },
+      "showUnpreparedSpells": {
+        "value": false
+      },
+      "showSlotlessLevels": {
+        "value": true
+      },
+      "proficiency": {
+        "value": 1
+      },
+      "displayLevels": {},
+      "slots": {
+        "slot0": {
+          "prepared": [],
+          "value": 0,
+          "max": 0
+        },
+        "slot1": {
+          "prepared": [],
+          "value": 0,
+          "max": 0
+        },
+        "slot2": {
+          "prepared": [],
+          "value": 0,
+          "max": 0
+        },
+        "slot3": {
+          "prepared": [],
+          "value": 0,
+          "max": 0
+        },
+        "slot4": {
+          "prepared": [],
+          "value": 0,
+          "max": 0
+        },
+        "slot5": {
+          "prepared": [],
+          "value": 0,
+          "max": 0
+        },
+        "slot6": {
+          "prepared": [],
+          "value": 0,
+          "max": 0
+        },
+        "slot7": {
+          "prepared": [],
+          "value": 0,
+          "max": 0
+        },
+        "slot8": {
+          "prepared": [],
+          "value": 0,
+          "max": 0
+        },
+        "slot9": {
+          "prepared": [],
+          "value": 0,
+          "max": 0
+        },
+        "slot10": {
+          "prepared": [],
+          "value": 0,
+          "max": 0
+        },
+        "slot11": {
+          "prepared": [],
+          "value": 0,
+          "max": 0
+        }
+      },
+      "autoHeightenLevel": {
+        "value": null
+      }
+    },
+    "kit": {
+      "templates": [
+        "common",
+        "traits",
+        "rarity"
+      ],
+      "items": {},
+      "price": {
+        "value": {}
+      }
     },
     "condition": {
-      "templates": ["base"]
+      "templates": [
+        "common"
+      ],
+      "group": null,
+      "duration": {
+        "value": -1,
+        "unit": "unlimited",
+        "expiry": null
+      },
+      "value": {
+        "isValued": false,
+        "value": 0
+      },
+      "references": {
+        "children": [],
+        "overrides": [],
+        "overriddenBy": []
+      },
+      "overrides": []
+    },
+    "effect": {
+      "templates": [
+        "common",
+        "itemLevel",
+        "traits"
+      ],
+      "duration": {
+        "value": -1,
+        "unit": "unlimited",
+        "expiry": null,
+        "sustained": false
+      },
+      "start": {
+        "value": 0,
+        "initiative": null
+      },
+      "tokenIcon": {
+        "show": true
+      },
+      "badge": null,
+      "context": null
+    },
+    "deity": {
+      "templates": [
+        "common"
+      ],
+      "category": "deity",
+      "sanctification": {
+        "modal": "can",
+        "what": [
+          "holy",
+          "unholy"
+        ]
+      },
+      "domains": {
+        "primary": [],
+        "alternate": []
+      },
+      "font": [
+        "harm",
+        "heal"
+      ],
+      "attribute": [],
+      "skill": null,
+      "weapons": [],
+      "spells": {}
     }
   }
 }
