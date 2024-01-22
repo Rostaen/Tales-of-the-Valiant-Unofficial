@@ -2,7 +2,7 @@
  * Extend the base Actor document by defining a custom roll data structure which is ideal for the Simple system.
  * @extends {Actor}
  */
-export class TotV-UOActor extends Actor {
+export class TOTVUOActor extends Actor {
 
   /** @override */
   prepareData() {

@@ -1,12 +1,12 @@
 // Import document classes.
-import { BoilerplateActor } from "./documents/actor.mjs";
-import { BoilerplateItem } from "./documents/item.mjs";
+import { TotVUOActor } from "./documents/actor.mjs";
+import { TotVUOItem } from "./documents/item.mjs";
 // Import sheet classes.
-import { BoilerplateActorSheet } from "./sheets/actor-sheet.mjs";
-import { BoilerplateItemSheet } from "./sheets/item-sheet.mjs";
+import { TotVUOActorSheet } from "./sheets/actor-sheet.mjs";
+import { TotVUOItemSheet } from "./sheets/item-sheet.mjs";
 // Import helper/utility classes and constants.
 import { preloadHandlebarsTemplates } from "./helpers/templates.mjs";
-import { TOTV-UO } from "./helpers/config.mjs";
+import { TOTVUO } from "./helpers/config.mjs";
 
 /* -------------------------------------------- */
 /*  Init Hook                                   */
@@ -17,13 +17,13 @@ Hooks.once('init', function() {
   // Add utility classes to the global game object so that they're more easily
   // accessible in global contexts.
   game.totvuo = {
-    BoilerplateActor,
-    BoilerplateItem,
+    TotVUOActor,
+    TotVUOItem,
     rollItemMacro
   };
 
   // Add custom constants for configuration.
-  CONFIG.TOTV-UO = TOTV-UO;
+  CONFIG.TOTVUO = TOTVUO;
 
   /**
    * Set an initiative formula for the system
@@ -35,14 +35,14 @@ Hooks.once('init', function() {
   };
 
   // Define custom Document classes
-  CONFIG.Actor.documentClass = BoilerplateActor;
-  CONFIG.Item.documentClass = BoilerplateItem;
+  CONFIG.Actor.documentClass = TotVUOActor;
+  CONFIG.Item.documentClass = TotVUOItem;
 
   // Register sheet application classes
   Actors.unregisterSheet("core", ActorSheet);
-  Actors.registerSheet("totvuo", BoilerplateActorSheet, { makeDefault: true });
+  Actors.registerSheet("totvuo", TotVUOActorSheet, { makeDefault: true });
   Items.unregisterSheet("core", ItemSheet);
-  Items.registerSheet("totvuo", BoilerplateItemSheet, { makeDefault: true });
+  Items.registerSheet("totvuo", TotVUOItemSheet, { makeDefault: true });
 
   // Preload Handlebars templates.
   return preloadHandlebarsTemplates();

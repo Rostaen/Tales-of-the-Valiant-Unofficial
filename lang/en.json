@@ -1,22 +1,22 @@
 {
-  "TOTV-UO.AbilityStr": "Strength",
-  "TOTV-UO.AbilityCon": "Constitution",
-  "TOTV-UO.AbilityDex": "Dexterity",
-  "TOTV-UO.AbilityInt": "Intelligence",
-  "TOTV-UO.AbilityWis": "Wisdom",
-  "TOTV-UO.AbilityCha": "Charisma",
+  "TOTVUO.AbilityStr": "Strength",
+  "TOTVUO.AbilityCon": "Constitution",
+  "TOTVUO.AbilityDex": "Dexterity",
+  "TOTVUO.AbilityInt": "Intelligence",
+  "TOTVUO.AbilityWis": "Wisdom",
+  "TOTVUO.AbilityCha": "Charisma",
 
-  "TOTV-UO.AbilityStrAbbr": "str",
-  "TOTV-UO.AbilityConAbbr": "con",
-  "TOTV-UO.AbilityDexAbbr": "dex",
-  "TOTV-UO.AbilityIntAbbr": "int",
-  "TOTV-UO.AbilityWisAbbr": "wis",
-  "TOTV-UO.AbilityChaAbbr": "cha",
+  "TOTVUO.AbilityStrAbbr": "str",
+  "TOTVUO.AbilityConAbbr": "con",
+  "TOTVUO.AbilityDexAbbr": "dex",
+  "TOTVUO.AbilityIntAbbr": "int",
+  "TOTVUO.AbilityWisAbbr": "wis",
+  "TOTVUO.AbilityChaAbbr": "cha",
 
-  "TOTV-UO.EffectCreate": "Create Effect",
-  "TOTV-UO.EffectToggle": "Toggle Effect",
-  "TOTV-UO.EffectEdit": "Edit Effect",
-  "TOTV-UO.EffectDelete": "Delete Effect",
+  "TOTVUO.EffectCreate": "Create Effect",
+  "TOTVUO.EffectToggle": "Toggle Effect",
+  "TOTVUO.EffectEdit": "Edit Effect",
+  "TOTVUO.EffectDelete": "Delete Effect",
 
-  "TOTV-UO.Add": "Add"
+  "TOTVUO.Add": "Add"
 }

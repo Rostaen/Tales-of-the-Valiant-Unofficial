@@ -1,4 +1,4 @@
-# TotV-UO System
+# TOTVUO System
 
 ![Foundry v11](https://img.shields.io/badge/foundry-v11-green)
 
@@ -6,7 +6,7 @@ This system is a totvuo system that you can use as a starting point for building
 
 ## Usage
 
-Before installing this system, you should rename any files that have `totvuo` in their filename to use whatever machine-safe name your system needs, such as `adnd2e` if you were building a system for 2nd edition Advanced Dungeons & Dragons. In addition, you should search through the files for `totvuo` and `TotV-UO` and do the same for those, replacing them with appropriate names for your system.
+Before installing this system, you should rename any files that have `totvuo` in their filename to use whatever machine-safe name your system needs, such as `adnd2e` if you were building a system for 2nd edition Advanced Dungeons & Dragons. In addition, you should search through the files for `totvuo` and `TOTVUO` and do the same for those, replacing them with appropriate names for your system.
 
 A system's ID _must_ match its containing folder, and once you've published your system it cannot be changed. It also must be unique within the foundry ecosystem. Choose wisely!
 
@@ -14,11 +14,11 @@ A system's ID _must_ match its containing folder, and once you've published your
 
 This project is also available as generator that can be run with npm: https://www.npmjs.com/package/generator-foundry
 
-### Vue 3 TotV-UO
+### Vue 3 TOTVUO
 
 Alternatively, there's another build of this system that supports using Vue 3 components (ES module build target) for character sheet templates.
 
-Head over to the [Vue3TotV-UO System](https://gitlab.com/asacolips-projects/foundry-mods/vue3totvuo) repo if you're interested in using Vue!
+Head over to the [Vue3TOTVUO System](https://gitlab.com/asacolips-projects/foundry-mods/vue3totvuo) repo if you're interested in using Vue!
 
 ### Getting Help
 

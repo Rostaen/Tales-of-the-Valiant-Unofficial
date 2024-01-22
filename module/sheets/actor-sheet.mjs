@@ -4,7 +4,7 @@ import {onManageActiveEffect, prepareActiveEffectCategories} from "../helpers/ef
  * Extend the basic ActorSheet with some very simple modifications
  * @extends {ActorSheet}
  */
-export class TotV-UOActorSheet extends ActorSheet {
+export class TOTVUOActorSheet extends ActorSheet {
 
   /** @override */
   static get defaultOptions() {
@@ -69,7 +69,7 @@ export class TotV-UOActorSheet extends ActorSheet {
   _prepareCharacterData(context) {
     // Handle ability scores.
     for (let [k, v] of Object.entries(context.system.abilities)) {
-      v.label = game.i18n.localize(CONFIG.TOTV-UO.abilities[k]) ?? k;
+      v.label = game.i18n.localize(CONFIG.TOTVUO.abilities[k]) ?? k;
     }
   }
 

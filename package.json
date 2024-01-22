@@ -1,7 +1,7 @@
 {
   "name": "totvuo",
   "version": "1.0.0",
-  "description": "CSS compiler for the TotV-UO system",
+  "description": "CSS compiler for the TOTVUO system",
   "scripts": {
     "build": "gulp build",
     "compile": "gulp css",
