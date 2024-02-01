@@ -11,13 +11,14 @@
     ],
     "templates": {
       "common": {
-        "attributes":{
+        "attributes": {
           "hp": {
-            "value": 0,
-            "temp": 0
+            "value": 100,
+            "temp": 0,
+            "max": 0
           },
           "speed": {
-            "value": 25,
+            "value": 30,
             "otherSpeeds": []
           }
         },
@@ -29,13 +30,13 @@
             "value": [],
             "details": ""
           },
-          "level":{
+          "level": {
             "value": 1
           }
         }
       }
     },
-    "htmlFields":[
+    "htmlFields": [
       "details.biography.appearance",
       "details.biography.backstory",
       "details.biography.campaignNotes",
@@ -88,154 +89,152 @@
             "campaign": false
           }
         },
-        "keyability":{
+        "keyability": {
           "value": "str"
         },
-        "xp":{
+        "xp": {
           "value": 0,
           "min": 0
         },
-        "age":{
+        "age": {
           "value": ""
         },
-        "height":{
+        "height": {
           "value": ""
         },
-        "weight":{
+        "weight": {
           "value": ""
         },
-        "gender":{
+        "gender": {
           "value": ""
         }
       },
-      "skills":{
+      "skills": {
         "acr": {
-            "rank": 0
+          "rank": 0
         },
         "ani": {
-            "rank": 0
+          "rank": 0
         },
         "arc": {
-            "rank": 0
+          "rank": 0
         },
         "ath": {
-            "rank": 0
+          "rank": 0
         },
         "dec": {
-            "rank": 0
+          "rank": 0
         },
         "his": {
-            "rank": 0
+          "rank": 0
         },
         "ins": {
-            "rank": 0
+          "rank": 0
         },
         "int": {
-            "rank": 0
+          "rank": 0
         },
         "inv": {
-            "rank": 0
+          "rank": 0
         },
         "med": {
-            "rank": 0
+          "rank": 0
         },
         "nat": {
-            "rank": 0
+          "rank": 0
         },
         "per": {
-            "rank": 0
+          "rank": 0
         },
         "prf": {
-            "rank": 0
+          "rank": 0
         },
         "prs": {
-            "rank": 0
+          "rank": 0
         },
         "rel": {
-            "rank": 0
+          "rank": 0
         },
         "soh": {
-            "rank": 0
+          "rank": 0
         },
         "ste": {
-            "rank": 0
+          "rank": 0
         },
         "sur": {
-            "rank": 0
+          "rank": 0
         }
       },
       "resources": {
-        "luckPoints":{
+        "luckPoints": {
           "value": 0,
           "max": 5
         },
-        "classPoints":{
+        "classPoints": {
           "value": 0
         },
-        "otherPoints":{
+        "otherPoints": {
           "value": 0
         }
       }
     },
     "npc": {
-      "templates": [
-        "common"
-      ],
-      "abilities":{
-        "str":{
+      "templates": ["common"],
+      "abilities": {
+        "str": {
           "mod": 0
         },
-        "dex":{
+        "dex": {
           "mod": 0
         },
-        "con":{
+        "con": {
           "mod": 0
         },
-        "int":{
+        "int": {
           "mod": 0
         },
-        "wis":{
+        "wis": {
           "mod": 0
         },
-        "cha":{
+        "cha": {
           "mod": 0
         }
       },
-      "attributes":{
-        "ac":{
+      "attributes": {
+        "ac": {
           "value": 10,
           "details": ""
         },
-        "hp":{
+        "hp": {
           "value": 10,
           "max": 10,
           "details": ""
         },
-        "allSaves":{
+        "allSaves": {
           "value": ""
         },
-        "speed":{
+        "speed": {
           "details": ""
         }
       },
-      "perception":{
-        "details":"",
+      "perception": {
+        "details": "",
         "mod": 0,
         "senses": [],
         "vision": true
       },
-      "stealth":{
-        "details":"",
+      "stealth": {
+        "details": "",
         "mod": 0
       },
-      "traits":{
-        "value":[],
+      "traits": {
+        "value": [],
         "rarity": "common",
-        "size":{
+        "size": {
           "value": "med"
         }
       },
-      "details":{
+      "details": {
         "blurb": "",
         "publicNotes": "",
         "privateNotes": "",
@@ -248,205 +247,205 @@
       },
       "cr": 0
     },
-    "hazard":{
+    "hazard": {
       "template": [],
       "saves": {
         "strength": {
-            "value": 0,
-            "saveDetail": ""
+          "value": 0,
+          "saveDetail": ""
         },
         "dexterity": {
-            "value": 0,
-            "saveDetail": ""
+          "value": 0,
+          "saveDetail": ""
         },
         "constitution": {
-            "value": 0,
-            "saveDetail": ""
+          "value": 0,
+          "saveDetail": ""
         },
         "intelligence": {
-            "value": 0,
-            "saveDetail": ""
+          "value": 0,
+          "saveDetail": ""
         },
         "wisdom": {
-            "value": 0,
-            "saveDetail": ""
+          "value": 0,
+          "saveDetail": ""
         },
         "charisma": {
-            "value": 0,
-            "saveDetail": ""
+          "value": 0,
+          "saveDetail": ""
         }
       },
       "attributes": {
-          "ac": {
-              "value": 0
-          },
-          "hp": {
-              "value": 0,
-              "max": 0,
-              "temp": 0,
-              "details": ""
-          },
-          "hardness": 0,
-          "stealth": {
-              "value": 0,
-              "details": ""
-          },
-          "emitsSound": "encounter"
+        "ac": {
+          "value": 0
+        },
+        "hp": {
+          "value": 0,
+          "max": 0,
+          "temp": 0,
+          "details": ""
+        },
+        "hardness": 0,
+        "stealth": {
+          "value": 0,
+          "details": ""
+        },
+        "emitsSound": "encounter"
       },
       "details": {
-          "isComplex": false,
-          "cr": {
-              "value": 1
-          },
-          "disable": "",
-          "description": "",
-          "reset": "",
-          "routine": "",
-          "publication": {
-              "title": "",
-              "authors": "",
-              "license": "OGL",
-              "remaster": false
-          }
+        "isComplex": false,
+        "cr": {
+          "value": 1
+        },
+        "disable": "",
+        "description": "",
+        "reset": "",
+        "routine": "",
+        "publication": {
+          "title": "",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        }
       },
       "statusEffects": [],
       "traits": {
-          "value": [],
-          "rarity": "common",
-          "size": {
-              "value": "med"
-          }
+        "value": [],
+        "rarity": "common",
+        "size": {
+          "value": "med"
+        }
       },
       "_migration": {
-          "version": null,
-          "previous": null
+        "version": null,
+        "previous": null
       }
     },
     "loot": {
-        "templates": [],
-        "attributes": {},
-        "details": {
-            "description": "",
-            "level": {
-                "value": 0
-            }
-        },
-        "lootSheetType": "Loot",
-        "hiddenWhenEmpty": false,
-        "_migration": {
-            "version": null,
-            "previous": null
+      "templates": [],
+      "attributes": {},
+      "details": {
+        "description": "",
+        "level": {
+          "value": 0
         }
+      },
+      "lootSheetType": "Loot",
+      "hiddenWhenEmpty": false,
+      "_migration": {
+        "version": null,
+        "previous": null
+      }
     },
     "familiar": {
-        "templates": [],
-        "master": {
-            "id": null,
-            "ability": null
+      "templates": [],
+      "master": {
+        "id": null,
+        "ability": null
+      },
+      "abilities": {
+        "str": {
+          "mod": 0
         },
-        "abilities":{
-          "str":{
-            "mod": 0
-          },
-          "dex":{
-            "mod": 0
-          },
-          "con":{
-            "mod": 0
-          },
-          "int":{
-            "mod": 0
-          },
-          "wis":{
-            "mod": 0
-          },
-          "cha":{
-            "mod": 0
-          }
+        "dex": {
+          "mod": 0
         },
-        "attributes": {
-            "hp": {
-                "value": 5,
-                "temp": 0
-            }
+        "con": {
+          "mod": 0
         },
-        "details": {
-            "creature": {
-                "value": ""
-            }
+        "int": {
+          "mod": 0
         },
-        "resources": {},
-        "_migration": {
-            "version": null,
-            "previous": null
+        "wis": {
+          "mod": 0
+        },
+        "cha": {
+          "mod": 0
         }
+      },
+      "attributes": {
+        "hp": {
+          "value": 5,
+          "temp": 0
+        }
+      },
+      "details": {
+        "creature": {
+          "value": ""
+        }
+      },
+      "resources": {},
+      "_migration": {
+        "version": null,
+        "previous": null
+      }
     },
     "vehicle": {
-        "templates": [],
-        "attributes": {
-            "ac": {
-                "value": 10,
-                "check": 0,
-                "details": ""
-            },
-            "hardness": 0,
-            "hp": {
-                "value": 10,
-                "max": 10,
-                "temp": 0,
-                "details": ""
-            },
-            "collisionDC": {
-                "value": 0
-            },
-            "collisionDamage": {
-                "value": ""
-            },
-            "immunities": [
-                {
-                    "type": "object-immunities"
-                }
-            ]
+      "templates": [],
+      "attributes": {
+        "ac": {
+          "value": 10,
+          "check": 0,
+          "details": ""
         },
-        "saves": {
-            "constitution": {
-                "value": 0,
-                "saveDetail": ""
-            }
+        "hardness": 0,
+        "hp": {
+          "value": 10,
+          "max": 10,
+          "temp": 0,
+          "details": ""
         },
-        "details": {
-            "description": "",
-            "level": {
-                "value": 1
-            },
-            "price": 0,
-            "space": {
-                "long": 10,
-                "wide": 10,
-                "high": 5
-            },
-            "crew": "1 pilot",
-            "passengers": "",
-            "pilotingCheck": "",
-            "speed": 0,
-            "publication": {
-                "title": "",
-                "authors": "",
-                "license": "OGL",
-                "remaster": false
-            }
+        "collisionDC": {
+          "value": 0
         },
-        "traits": {
-            "value": [],
-            "rarity": "common",
-            "size": {
-                "value": "lg"
-            }
+        "collisionDamage": {
+          "value": ""
         },
-        "_migration": {
-            "version": null,
-            "previous": null
+        "immunities": [
+          {
+            "type": "object-immunities"
+          }
+        ]
+      },
+      "saves": {
+        "constitution": {
+          "value": 0,
+          "saveDetail": ""
         }
+      },
+      "details": {
+        "description": "",
+        "level": {
+          "value": 1
+        },
+        "price": 0,
+        "space": {
+          "long": 10,
+          "wide": 10,
+          "high": 5
+        },
+        "crew": "1 pilot",
+        "passengers": "",
+        "pilotingCheck": "",
+        "speed": 0,
+        "publication": {
+          "title": "",
+          "authors": "",
+          "license": "OGL",
+          "remaster": false
+        }
+      },
+      "traits": {
+        "value": [],
+        "rarity": "common",
+        "size": {
+          "value": "lg"
+        }
+      },
+      "_migration": {
+        "version": null,
+        "previous": null
+      }
     }
   },
   "Item": {
@@ -485,44 +484,44 @@
         },
         "rules": [],
         "slug": null,
-        "_migration":{
+        "_migration": {
           "version": null,
           "lastMigration": null
         },
-        "traits":{
-          "otherTags":[]
+        "traits": {
+          "otherTags": []
         },
-        "publications":{
+        "publications": {
           "title": "",
           "authors": "",
           "license": "OGL",
           "remaster": false
         }
       },
-      "traits":{
-        "traits":{
-          "value":[]
+      "traits": {
+        "traits": {
+          "value": []
         }
       },
-      "rarity":{
-        "traits":{
+      "rarity": {
+        "traits": {
           "rarity": "common"
         }
       },
-      "physical":{
-        "cr":{
+      "physical": {
+        "cr": {
           "value": 0
         },
-        "traits":{
+        "traits": {
           "value": [],
-          "rarity":"common"
+          "rarity": "common"
         },
         "quantity": 1,
         "baseItem": null,
-        "weight":{
+        "weight": {
           "value": 1
         },
-        "hp":{
+        "hp": {
           "value": 0,
           "max": 0
         },
@@ -538,9 +537,9 @@
           "type": null,
           "grade": null
         },
-        "identification":{
+        "identification": {
           "status": "identified",
-          "unidentified":{
+          "unidentified": {
             "name": "",
             "img": "",
             "data": {
@@ -558,18 +557,14 @@
         }
       }
     },
-    "htmlFields":[
+    "htmlFields": [
       "description.gm",
       "description.value",
       "identification.data.description.value"
     ],
-    "affliction":{
-      "templates":[
-        "common",
-        "itemLevel",
-        "traits"
-      ],
-      "duration":{
+    "affliction": {
+      "templates": ["common", "itemLevel", "traits"],
+      "duration": {
         "value": -1,
         "unit": "unlimited",
         "expiry": null
@@ -583,68 +578,56 @@
       "context": null
     },
     "backpack": {
-      "templates": [
-          "common",
-          "physical"
-      ],
+      "templates": ["common", "physical"],
       "bulk": {
-          "value": 0,
-          "heldOrStowed": 0.1,
-          "capacity": 10,
-          "ignored": 0
+        "value": 0,
+        "heldOrStowed": 0.1,
+        "capacity": 10,
+        "ignored": 0
       },
       "collapsed": false,
       "stowing": false,
       "usage": {
-          "value": "worn"
+        "value": "worn"
       }
     },
     "book": {
-      "templates": [
-          "common",
-          "physical"
-      ],
+      "templates": ["common", "physical"],
       "category": "formula",
       "capacity": 1,
       "contents": []
     },
     "treasure": {
-      "templates": [
-          "common",
-          "physical"
-      ],
+      "templates": ["common", "physical"],
       "stackGroup": null
     },
     "weapon": {
-      "templates": [
-          "common",
-          "physical"
-      ],
+      "templates": ["common", "physical"],
       "usage": {
-          "value": "held-in-one-hand"
+        "value": "held-in-one-hand"
       },
       "category": "simple",
       "group": null,
       "bonus": {
-          "value": 0
+        "value": 0
       },
       "damage": {
-          "dice": 1,
-          "die": "d6",
-          "damageType": "slashing"
+        "dice": 1,
+        "die": "d6",
+        "damageType": "slashing"
       },
       "equipped": {
-          "handsHeld": 0
+        "handsHeld": 0
       },
       "bonusDamage": {
-          "value": 0
+        "value": 0
       },
       "splashDamage": {
-          "value": 0
+        "value": 0
       },
       "range": null,
       "reload": {
-          "value": null
+        "value": null
       },
       "specific": null,
       "subitems": [],
@@ -660,10 +643,7 @@
       }
     },
     "armor": {
-      "templates": [
-        "common",
-        "physical"
-      ],
+      "templates": ["common", "physical"],
       "category": "light",
       "group": null,
       "acBonus": 0,
@@ -674,10 +654,7 @@
       "subitems": []
     },
     "melee": {
-      "templates": [
-        "common",
-        "traits"
-      ],
+      "templates": ["common", "traits"],
       "weaponType": {
         "value": "melee"
       },
@@ -693,10 +670,7 @@
       }
     },
     "consumable": {
-      "templates": [
-        "common",
-        "physical"
-      ],
+      "templates": ["common", "physical"],
       "category": "other",
       "uses": {
         "value": 1,
@@ -710,27 +684,18 @@
       "stackGroup": null,
       "spell": null,
       "traits": {
-        "value": [
-            "consumable"
-        ]
+        "value": ["consumable"]
       }
     },
     "equipment": {
-      "templates": [
-        "common",
-        "physical"
-      ],
+      "templates": ["common", "physical"],
       "usage": {
         "value": "held-in-one-hand"
       },
       "subitems": []
     },
     "ancestry": {
-      "templates": [
-        "common",
-        "traits",
-        "rarity"
-      ],
+      "templates": ["common", "traits", "rarity"],
       "hp": 6,
       "size": "med",
       "reach": 5,
@@ -743,20 +708,11 @@
           "value": []
         },
         "2": {
-          "value": [
-            "str",
-            "dex",
-            "con",
-            "int",
-            "wis",
-            "cha"
-          ]
+          "value": ["str", "dex", "con", "int", "wis", "cha"]
         }
       },
       "languages": {
-        "value": [
-          "common"
-        ],
+        "value": ["common"],
         "custom": ""
       },
       "additionalLanguages": {
@@ -769,11 +725,7 @@
     },
     "background": {
       "story": "",
-      "templates": [
-        "common",
-        "traits",
-        "rarity"
-      ],
+      "templates": ["common", "traits", "rarity"],
       "talent": {
         "info": "",
         "choice": []
@@ -784,7 +736,7 @@
         "value": 2,
         "type": []
       },
-      "motivation":{
+      "motivation": {
         "1": "",
         "2": "",
         "3": "",
@@ -796,11 +748,7 @@
       }
     },
     "campaignFeature": {
-      "templates": [
-        "common",
-        "traits",
-        "rarity"
-      ],
+      "templates": ["common", "traits", "rarity"],
       "campaign": "kingmaker",
       "category": "kingdom-activity",
       "actionType": {
@@ -815,11 +763,7 @@
       "location": null
     },
     "class": {
-      "templates": [
-        "common",
-        "traits",
-        "rarity"
-      ],
+      "templates": ["common", "traits", "rarity"],
       "keyAbility": {
         "value": []
       },
@@ -857,26 +801,15 @@
       "spellcasting": 0,
       "classFeatureLevels": {
         "value": [
-          1,2,3,4,5,6,7,8,9,10,
-          11,12,13,14,15,16,17,18,19,20
+          1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20
         ]
       },
       "proficiencyIncreaseLevels": {
-        "value": [
-          5,
-          9,
-          13,
-          17
-        ]
+        "value": [5, 9, 13, 17]
       }
     },
     "feat": {
-      "templates": [
-        "common",
-        "itemLevel",
-        "traits",
-        "rarity"
-      ],
+      "templates": ["common", "itemLevel", "traits", "rarity"],
       "category": "bonus",
       "onlyLevel1": false,
       "maxTakable": 1,
@@ -892,18 +825,11 @@
       "location": null
     },
     "heritage": {
-      "templates": [
-        "common",
-        "traits",
-        "rarity"
-      ],
+      "templates": ["common", "traits", "rarity"],
       "ancestry": null
     },
     "action": {
-      "templates": [
-        "common",
-        "traits"
-      ],
+      "templates": ["common", "traits"],
       "actionType": {
         "value": "passive"
       },
@@ -914,25 +840,17 @@
       "deathNote": false
     },
     "shield": {
-      "templates": [
-        "common",
-        "physical"
-      ],
+      "templates": ["common", "physical"],
       "acBonus": 2,
       "specific": null,
       "speedPenalty": 0,
       "traits": {
-          "integrated": null
+        "integrated": null
       },
       "subitems": []
     },
     "spell": {
-      "templates": [
-        "common",
-        "itemLevel",
-        "traits",
-        "rarity"
-      ],
+      "templates": ["common", "itemLevel", "traits", "rarity"],
       "traits": {
         "traditions": []
       },
@@ -962,9 +880,7 @@
       "counteraction": false
     },
     "spellcastingEntry": {
-      "templates": [
-        "common"
-      ],
+      "templates": ["common"],
       "ability": {
         "value": "cha"
       },
@@ -1055,20 +971,14 @@
       }
     },
     "kit": {
-      "templates": [
-        "common",
-        "traits",
-        "rarity"
-      ],
+      "templates": ["common", "traits", "rarity"],
       "items": {},
       "price": {
         "value": {}
       }
     },
     "condition": {
-      "templates": [
-        "common"
-      ],
+      "templates": ["common"],
       "group": null,
       "duration": {
         "value": -1,
@@ -1087,11 +997,7 @@
       "overrides": []
     },
     "effect": {
-      "templates": [
-        "common",
-        "itemLevel",
-        "traits"
-      ],
+      "templates": ["common", "itemLevel", "traits"],
       "duration": {
         "value": -1,
         "unit": "unlimited",
@@ -1109,25 +1015,17 @@
       "context": null
     },
     "deity": {
-      "templates": [
-        "common"
-      ],
+      "templates": ["common"],
       "category": "deity",
       "sanctification": {
         "modal": "can",
-        "what": [
-          "holy",
-          "unholy"
-        ]
+        "what": ["holy", "unholy"]
       },
       "domains": {
         "primary": [],
         "alternate": []
       },
-      "font": [
-        "harm",
-        "heal"
-      ],
+      "font": ["harm", "heal"],
       "attribute": [],
       "skill": null,
       "weapons": [],

@@ -28,10 +28,16 @@
         <div class="resource flex-group-center">
           <label for="system.health.value" class="resource-label">Health</label>
           <div class="resource-content flexrow flex-center flex-between">
-            <input
+            <!-- <input
               type="text"
               name="system.health.value"
               value="{{system.health.value}}"
+              data-dtype="Number"
+            /> -->
+            <input
+              type="text"
+              name="system.health.value"
+              value="{{actor.templates.common.attributes.hp.value}}"
               data-dtype="Number"
             />
             <span> / </span>
@@ -75,6 +81,9 @@
               data-dtype="Number"
             />
           </div>
+        </div>
+        <div class="resource-content flexrow flex-center flex-bteween">
+          <span>{{actor.character.abilities.str.value}}</span>
         </div>
       </div>
     </div>

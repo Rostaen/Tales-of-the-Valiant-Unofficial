@@ -1,24 +1,25 @@
 // Import document classes.
-import { TotVUOActor } from "./documents/actor.mjs";
-import { TotVUOItem } from "./documents/item.mjs";
+import { TOTVUOActor } from "./documents/actor.mjs";
+import { TOTVUOItem } from "./documents/item.mjs";
 // Import sheet classes.
-import { TotVUOActorSheet } from "./sheets/actor-sheet.mjs";
-import { TotVUOItemSheet } from "./sheets/item-sheet.mjs";
+import { TOTVUOActorSheet } from "./sheets/actor-sheet.mjs";
+import { TOTVUOItemSheet } from "./sheets/item-sheet.mjs";
 // Import helper/utility classes and constants.
 import { preloadHandlebarsTemplates } from "./helpers/templates.mjs";
 import { TOTVUO } from "./helpers/config.mjs";
 
+console.error("TotV | Import statements added");
 /* -------------------------------------------- */
 /*  Init Hook                                   */
 /* -------------------------------------------- */
 
 Hooks.once('init', function() {
-
+  console.error("TotV | inside init hook");
   // Add utility classes to the global game object so that they're more easily
   // accessible in global contexts.
   game.totvuo = {
-    TotVUOActor,
-    TotVUOItem,
+    TOTVUOActor,
+    TOTVUOItem,
     rollItemMacro
   };
 
@@ -35,14 +36,15 @@ Hooks.once('init', function() {
   };
 
   // Define custom Document classes
-  CONFIG.Actor.documentClass = TotVUOActor;
-  CONFIG.Item.documentClass = TotVUOItem;
+  CONFIG.Actor.documentClass = TOTVUOActor;
+  CONFIG.Item.documentClass = TOTVUOItem;
 
   // Register sheet application classes
   Actors.unregisterSheet("core", ActorSheet);
-  Actors.registerSheet("totvuo", TotVUOActorSheet, { makeDefault: true });
+  Actors.registerSheet("totvuo", TOTVUOActorSheet, { makeDefault: true });
+  console.log('TotV UO | Registered TotV AcotrSheet');
   Items.unregisterSheet("core", ItemSheet);
-  Items.registerSheet("totvuo", TotVUOItemSheet, { makeDefault: true });
+  Items.registerSheet("totvuo", TOTVUOItemSheet, { makeDefault: true });
 
   // Preload Handlebars templates.
   return preloadHandlebarsTemplates();
