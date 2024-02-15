@@ -130,12 +130,22 @@
           <div class="skills flexcol">
             {{#each system.skills as |skills key|}}
             <div class="skills flexrow flex-group-center">
+              <input
+                type="checkbox"
+                name="system.skills.proficient"
+                {{checked skills.proficient}}>
               <label
                 for="system.skills.{{key}}.value"
                 class="resource-label rollable flexlarge align-left"
                 data-roll="d20+@abilities.{{skills.core}}.mod"
                 data-label="{{skills.label}}"
-              >{{skills.label}} {{skills.key.core}}</label>
+              >{{skills.label}}</label>
+              <span
+                class="skills-mod"
+              >{{skills.value}}</span>
+              <span
+                class="skills-passive"
+                >TBD</span>
             </div>
             {{/each}}
           </div>
