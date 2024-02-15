@@ -28,16 +28,10 @@
         <div class="resource flex-group-center">
           <label for="system.health.value" class="resource-label">Health</label>
           <div class="resource-content flexrow flex-center flex-between">
-            <!-- <input
-              type="text"
-              name="system.health.value"
-              value="{{system.health.value}}"
-              data-dtype="Number"
-            /> -->
             <input
               type="text"
               name="system.health.value"
-              value="{{actor.templates.common.attributes.hp.value}}"
+              value="{{system.health.value}}"
               data-dtype="Number"
             />
             <span> / </span>
@@ -83,7 +77,7 @@
           </div>
         </div>
         <div class="resource-content flexrow flex-center flex-bteween">
-          <span>{{actor.character.abilities.str.value}}</span>
+          <span>{{data.abilities.str.value}}</span>
         </div>
       </div>
     </div>
@@ -130,6 +124,18 @@
                 data-label="{{ability.label}}"
                 >{{numberFormat ability.mod decimals=0 sign=true}}</span
               >
+            </div>
+            {{/each}}
+          </div>
+          <div class="skills flexcol">
+            {{#each system.skills as |skills key|}}
+            <div class="skills flexrow flex-group-center">
+              <label
+                for="system.skills.{{key}}.value"
+                class="resource-label rollable flexlarge align-left"
+                data-roll="d20+@abilities.{{skills.core}}.mod"
+                data-label="{{skills.label}}"
+              >{{skills.label}} {{skills.key.core}}</label>
             </div>
             {{/each}}
           </div>

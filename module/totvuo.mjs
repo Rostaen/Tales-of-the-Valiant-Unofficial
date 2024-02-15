@@ -8,13 +8,11 @@ import { TOTVUOItemSheet } from "./sheets/item-sheet.mjs";
 import { preloadHandlebarsTemplates } from "./helpers/templates.mjs";
 import { TOTVUO } from "./helpers/config.mjs";
 
-console.error("TotV | Import statements added");
 /* -------------------------------------------- */
 /*  Init Hook                                   */
 /* -------------------------------------------- */
 
 Hooks.once('init', function() {
-  console.error("TotV | inside init hook");
   // Add utility classes to the global game object so that they're more easily
   // accessible in global contexts.
   game.totvuo = {

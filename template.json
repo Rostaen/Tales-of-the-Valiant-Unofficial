@@ -111,58 +111,94 @@
       },
       "skills": {
         "acr": {
-          "rank": 0
+          "label": "Acrobatics",
+          "value": 0,
+          "core": "dex"
         },
         "ani": {
-          "rank": 0
+          "label": "Animal Handling",
+          "value": 0,
+          "core": "wis"
         },
         "arc": {
-          "rank": 0
+          "label": "Arcana",
+          "value": 0,
+          "core": "int"
         },
         "ath": {
-          "rank": 0
+          "label": "Athletcis",
+          "value": 0,
+          "core": "str"
         },
         "dec": {
-          "rank": 0
+          "label": "Deception",
+          "value": 0,
+          "core": "cha"
         },
         "his": {
-          "rank": 0
+          "label": "History",
+          "value": 0,
+          "core": "int"
         },
         "ins": {
-          "rank": 0
+          "label": "Insight",
+          "value": 0,
+          "core": "wis"
         },
         "int": {
-          "rank": 0
+          "label": "Intimidation",
+          "value": 0,
+          "core": "cha"
         },
         "inv": {
-          "rank": 0
+          "label": "Investigation",
+          "value": 0,
+          "core": "int"
         },
         "med": {
-          "rank": 0
+          "label": "Medicine",
+          "value": 0,
+          "core": "wis"
         },
         "nat": {
-          "rank": 0
+          "label": "Nature",
+          "value": 0,
+          "core": "int"
         },
         "per": {
-          "rank": 0
+          "label": "Perception",
+          "value": 0,
+          "core": "wis"
         },
         "prf": {
-          "rank": 0
+          "label": "Performance",
+          "value": 0,
+          "core": "cha"
         },
         "prs": {
-          "rank": 0
+          "label": "Persuasion",
+          "value": 0,
+          "core": "cha"
         },
         "rel": {
-          "rank": 0
+          "label": "Religion",
+          "value": 0,
+          "core": "int"
         },
         "soh": {
-          "rank": 0
+          "label": "Slight of Hand",
+          "value": 0,
+          "core": "dex"
         },
         "ste": {
-          "rank": 0
+          "label": "Stealth",
+          "value": 0,
+          "core": "dex"
         },
         "sur": {
-          "rank": 0
+          "label": "Survival",
+          "value": 0,
+          "core": "wis"
         }
       },
       "resources": {
