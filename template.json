@@ -120,128 +120,110 @@
         "acr": {
           "label": "Acrobatics",
           "value": 0,
-          "core": "dex",
-          "proficient": false,
-          "expert": false
+          "passive": 10,
+          "core": "dex"
         },
         "ani": {
           "label": "Animal Handling",
           "value": 0,
-          "core": "wis",
-          "proficient": false,
-          "expert": false
+          "passive": 10,
+          "core": "wis"
         },
         "arc": {
           "label": "Arcana",
           "value": 0,
-          "core": "int",
-          "proficient": false,
-          "expert": false
+          "passive": 10,
+          "core": "int"
         },
         "ath": {
-          "label": "Athletcis",
+          "label": "Athletics",
           "value": 0,
-          "core": "str",
-          "proficient": false,
-          "expert": false
+          "passive": 10,
+          "core": "str"
         },
         "dec": {
           "label": "Deception",
           "value": 0,
-          "core": "cha",
-          "proficient": false,
-          "expert": false
+          "passive": 10,
+          "core": "cha"
         },
         "his": {
           "label": "History",
           "value": 0,
-          "core": "int",
-          "proficient": false,
-          "expert": false
+          "passive": 10,
+          "core": "int"
         },
         "ins": {
           "label": "Insight",
           "value": 0,
-          "core": "wis",
-          "proficient": false,
-          "expert": false
+          "passive": 10,
+          "core": "wis"
         },
         "int": {
           "label": "Intimidation",
           "value": 0,
-          "core": "cha",
-          "proficient": false,
-          "expert": false
+          "passive": 10,
+          "core": "cha"
         },
         "inv": {
           "label": "Investigation",
           "value": 0,
-          "core": "int",
-          "proficient": false,
-          "expert": false
+          "passive": 10,
+          "core": "int"
         },
         "med": {
           "label": "Medicine",
           "value": 0,
-          "core": "wis",
-          "proficient": false,
-          "expert": false
+          "passive": 10,
+          "core": "wis"
         },
         "nat": {
           "label": "Nature",
           "value": 0,
-          "core": "int",
-          "proficient": false,
-          "expert": false
+          "passive": 10,
+          "core": "int"
         },
         "per": {
           "label": "Perception",
           "value": 0,
-          "core": "wis",
-          "proficient": false,
-          "expert": false
+          "passive": 10,
+          "core": "wis"
         },
         "prf": {
           "label": "Performance",
           "value": 0,
-          "core": "cha",
-          "proficient": false,
-          "expert": false
+          "passive": 10,
+          "core": "cha"
         },
         "prs": {
           "label": "Persuasion",
           "value": 0,
-          "core": "cha",
-          "proficient": false,
-          "expert": false
+          "passive": 10,
+          "core": "cha"
         },
         "rel": {
           "label": "Religion",
           "value": 0,
-          "core": "int",
-          "proficient": false,
-          "expert": false
+          "passive": 10,
+          "core": "int"
         },
         "soh": {
           "label": "Slight of Hand",
           "value": 0,
-          "core": "dex",
-          "proficient": false,
-          "expert": false
+          "passive": 10,
+          "core": "dex"
         },
         "ste": {
           "label": "Stealth",
           "value": 0,
-          "core": "dex",
-          "proficient": false,
-          "expert": false
+          "passive": 10,
+          "core": "dex"
         },
         "sur": {
           "label": "Survival",
           "value": 0,
-          "core": "wis",
-          "proficient": false,
-          "expert": false
+          "passive": 10,
+          "core": "wis"
         }
       },
       "resources": {
