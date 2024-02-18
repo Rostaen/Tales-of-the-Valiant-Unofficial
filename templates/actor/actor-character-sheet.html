@@ -119,24 +119,22 @@
           </div>
           <div class="skills flexcol">
             {{#each system.skills as |skills key|}}
-            <div class="skills flexrow flex-group-center">
-              <input
-                type="checkbox"
-                name="system.skills.proficient"
-                {{checked skills.proficient}}>
-              <label
-                for="system.skills.{{key}}.value"
-                class="resource-label rollable flexlarge align-left"
-                data-roll="d20+@abilities.{{skills.core}}.mod"
-                data-label="{{skills.label}}"
-              >{{skills.label}}</label>
-              <span
-                class="skills-mod"
-              >{{skills.value}}</span>
-              <span
-                class="skills-passive"
-                >{{skills.passive}}</span>
-            </div>
+              {{#unless (eq key 'proficient')}}
+                <div class="skills flexrow flex-group-center">
+                  <input type="hidden" value="0" class="hidden-{{key}}" />
+                  <span
+                    class="skill-proficiency {{key}} {{skills.label}} {{#if skill.proficient.[key]}}proficient{{/if}}"
+                  ></span>
+                  <label
+                    for="system.skills.{{key}}.value"
+                    class="resource-label rollable flexlarge align-left"
+                    data-roll="d20+@abilities.{{skills.core}}.mod"
+                    data-label="{{skills.label}}"
+                  >{{skills.label}}</label>
+                  <span class="skills-mod">{{numberFormat skills.value decimals=0 sign=true}}</span>
+                  <span class="skills-passive">({{skills.passive}})</span>
+                </div>
+              {{/unless}}
             {{/each}}
           </div>
         </aside>

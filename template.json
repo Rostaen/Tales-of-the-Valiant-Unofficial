@@ -48,12 +48,10 @@
       "details.publicNotes"
     ],
     "character": {
-      "derived": {
-        "ac": {
-          "value": 0,
-          "label": "Armor Class",
-          "modifiers": []
-        }
+      "ac": {
+        "value": 0,
+        "label": "Armor Class",
+        "modifiers": []
       },
       "templates": ["common"],
       "abilities": {

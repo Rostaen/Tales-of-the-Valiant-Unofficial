@@ -44,7 +44,6 @@ export class TOTVUOActor extends Actor {
    */
   _prepareCharacterData(actorData) {
     if (actorData.type !== 'character') return;
-    console.log("TotV | Preparing Character Data");
     // Make modifications to data here. For example:
     const systemData = actorData.system;
 
@@ -54,7 +53,7 @@ export class TOTVUOActor extends Actor {
       ability.mod = Math.floor((ability.value - 10) / 2);
     }
     // Setting initial AC based on Dex alone
-    systemData.derived.ac.value = Number(systemData.abilities.dex.mod)+10;
+    systemData.ac.value = Number(systemData.abilities.dex.mod)+10;
     console.log(systemData);
 
     // Setting skills
@@ -67,7 +66,6 @@ export class TOTVUOActor extends Actor {
       }
       skill.passive += skill.value;
     }
-    console.log(systemData.skills);
   }
 
 
