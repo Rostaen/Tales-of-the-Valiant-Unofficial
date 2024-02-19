@@ -12,8 +12,8 @@ export class TOTVUOActorSheet extends ActorSheet {
       classes: ["totvuo", "sheet", "actor"],
       template: "systems/totvuo/templates/actor/actor-sheet.html",
       width: 600,
-      height: 600,
-      tabs: [{ navSelector: ".sheet-tabs", contentSelector: ".sheet-body", initial: "features" }]
+      height: 900,
+      tabs: [{ navSelector: ".sheet-tabs", contentSelector: ".sheet-body", initial: "stats" }]
     });
   }
 
