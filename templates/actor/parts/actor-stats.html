@@ -1,0 +1,66 @@
+{{!-- The grid classes are defined in scss/global/_grid.scss. To use,
+use both the "grid" and "grid-Ncol" class where "N" can be any number
+from 1 to 12 and will create that number of columns. --}}
+<section class="grid grid-6col">
+    {{#each system.abilities as |ability key|}}
+    <div class="ability flexcol flex-group-center">
+    <label
+        for="system.abilities.{{key}}.value"
+        class="resource-label rollable flexlarge align-left"
+        data-roll="d20+@abilities.{{key}}.mod"
+        data-label="{{ability.label}}"
+        >{{ability.label}}</label
+    >
+    <input
+        type="text"
+        name="system.abilities.{{key}}.value"
+        value="{{ability.value}}"
+        data-dtype="Number"
+    />
+    <section class="grid grid-3col">
+        <span
+            class="ability-mod rollable"
+            data-roll="d20+@abilities.{{key}}.mod"
+            data-label="{{ability.label}}"
+            >{{numberFormat ability.mod decimals=0 sign=true}}</span
+        >
+        <span class="stat-prof-check"></span>
+        <span
+            class="save-mod rollable"
+            data-roll="d20+@abilities.{{key}}.save"
+            data-label="{{ability.label}}"
+            >{{numberFormat ability.save decimals=0 sign=true}}</span>
+    </section>
+    </div>
+    {{/each}}
+</section>
+<section class="grid grid-3col">
+    <aside class="sidebar">
+      <div class="skills flexcol">
+        <h2 class="skills">Skills</h2>
+        {{#each system.skills as |skills key|}}
+          {{#unless (eq key 'proficient')}}
+            <div class="skills flexrow flex-group-center">
+              <input type="hidden" value="0" class="hidden-{{key}}" />
+              <span
+                class="skill-proficiency {{key}} {{skills.label}} {{#if skill.proficient.[key]}}proficient{{/if}}"
+              ></span>
+              <label
+                for="system.skills.{{key}}.value"
+                class="resource-label rollable flexlarge align-left"
+                data-roll="d20+@abilities.{{skills.core}}.mod"
+                data-label="{{skills.label}}"
+              >{{skills.label}}</label>
+              <span class="skills-mod">{{numberFormat skills.value decimals=0 sign=true}}</span>
+              <span class="skills-passive">({{skills.passive}})</span>
+            </div>
+          {{/unless}}
+        {{/each}}
+      </div>
+    </aside>
+
+    <!-- {{!-- For the main features list, span the right two columns --}}
+    <section class="main grid-span-2">
+
+    </section> -->
+  </section>

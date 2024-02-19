@@ -15,11 +15,18 @@
           "hp": {
             "value": 100,
             "temp": 0,
-            "max": 0
+            "max": 0,
+            "core": 0
           },
           "speed": {
             "value": 30,
             "otherSpeeds": []
+          }
+        },
+        "proficiency": {
+          "base": 2,
+          "proficiencyIncreaseLevels": {
+            "value": [5, 9, 13, 17]
           }
         },
         "initiative": {

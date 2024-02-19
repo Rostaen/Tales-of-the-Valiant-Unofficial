@@ -7,6 +7,7 @@
   return loadTemplates([
 
     // Actor partials.
+    "systems/totvuo/templates/actor/parts/actor-stats.html",
     "systems/totvuo/templates/actor/parts/actor-features.html",
     "systems/totvuo/templates/actor/parts/actor-items.html",
     "systems/totvuo/templates/actor/parts/actor-spells.html",

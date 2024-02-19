@@ -30,7 +30,7 @@ export class TOTVUOActor extends Actor {
    */
   prepareDerivedData() {
     const actorData = this;
-    const systemData = actorData.system;
+    //const systemData = actorData.system;
     const flags = actorData.flags.totvuo || {};
 
     // Make separate methods for each Actor type (character, npc, etc.) to keep
@@ -52,8 +52,10 @@ export class TOTVUOActor extends Actor {
       // Calculate the modifier using d20 rules.
       ability.mod = Math.floor((ability.value - 10) / 2);
     }
+
     // Setting initial AC based on Dex alone
     systemData.ac.value = Number(systemData.abilities.dex.mod)+10;
+    console.log(">> TotV Console Log <<");
     console.log(systemData);
 
     // Setting skills
@@ -66,6 +68,10 @@ export class TOTVUOActor extends Actor {
       }
       skill.passive += skill.value;
     }
+
+    // Setting Proficienty Bonus
+    let profBonus = 0;
+
   }
 
 
