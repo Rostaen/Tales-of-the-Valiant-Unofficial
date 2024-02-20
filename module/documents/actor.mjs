@@ -51,6 +51,7 @@ export class TOTVUOActor extends Actor {
     for (let [key, ability] of Object.entries(systemData.abilities)) {
       // Calculate the modifier using d20 rules.
       ability.mod = Math.floor((ability.value - 10) / 2);
+      ability.save ===true ? ability.saveMod = systemData.proficiency.bonus *2 : systemData.proficiency.bonus;
     }
 
     // Setting initial AC based on Dex alone
@@ -63,15 +64,12 @@ export class TOTVUOActor extends Actor {
     for (let [key, skill] of Object.entries(systemData.skills)){
       keyStat = skill.core;
       for (let [key, ability] of Object.entries(systemData.abilities)){
-        if(key === keyStat)
+        if(key === keyStat){
           skill.value = ability.mod;
+        }
       }
       skill.passive += skill.value;
     }
-
-    // Setting Proficienty Bonus
-    let profBonus = 0;
-
   }
 
 

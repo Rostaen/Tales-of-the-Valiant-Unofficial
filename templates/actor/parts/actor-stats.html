@@ -29,7 +29,7 @@ from 1 to 12 and will create that number of columns. --}}
             class="save-mod rollable"
             data-roll="d20+@abilities.{{key}}.save"
             data-label="{{ability.label}}"
-            >{{numberFormat ability.save decimals=0 sign=true}}</span>
+            >{{numberFormat ability.saveMod decimals=0 sign=true}}</span>
     </section>
     </div>
     {{/each}}
@@ -41,10 +41,15 @@ from 1 to 12 and will create that number of columns. --}}
         {{#each system.skills as |skills key|}}
           {{#unless (eq key 'proficient')}}
             <div class="skills flexrow flex-group-center">
-              <input type="hidden" value="0" class="hidden-{{key}}" />
-              <span
-                class="skill-proficiency {{key}} {{skills.label}} {{#if skill.proficient.[key]}}proficient{{/if}}"
-              ></span>
+              <proficiency-cycle
+                type="skill"
+                name="{{key}}"
+                value="{{skills.profMod}}"
+              >
+                <div>
+                  <input type="number" value="0" />
+                </div>
+              </proficiency-cycle>
               <label
                 for="system.skills.{{key}}.value"
                 class="resource-label rollable flexlarge align-left"

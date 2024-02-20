@@ -134,6 +134,34 @@ export class TOTVUOActorSheet extends ActorSheet {
       const item = this.actor.items.get(li.data("itemId"));
       item.sheet.render(true);
     });
+    // Changing skill proficiency state
+    html.find('proficiency-cycle[type="skill"]').click((event) => {
+      const actorData = this.actor.toObject(false);
+      const value = $(event.target).attr('value');
+      const key = $(event.target).attr('name');
+
+      const setValues = (event, img, value, name, key) => {
+        $(event.target).css('background-image', `url("../icons/svg/circle-${img}.svg") no-repeat center`);
+        $(event.target).val(value);
+        const actorSkill = actorData.system.skills[key];
+        // console.log(key);
+        // console.log(actorData.system)
+        actorSkill.profMod = value * actorData.system.proficiency.base;
+        actorSkill.profType = name;
+        actorSkill.value += actorSkill.profMod;
+      }
+
+      if(value == 0)
+        setValues(event, 'solid', 1, 'proficient', key);
+      else if(value == 1)
+        setValues(event, 'check-regular', 2, 'expert', key);
+      else if(value == 2)
+        setValues(event, 'half-stroke-solid', 0.5, 'half', key);
+      else
+        setValues(event, 'regular', 0, 'none', key);
+
+      console.log(actorData.system);
+    });
 
     // -------------------------------------------------------------
     // Everything below here is only needed if the sheet is editable
@@ -225,5 +253,4 @@ export class TOTVUOActorSheet extends ActorSheet {
       return roll;
     }
   }
-
 }
