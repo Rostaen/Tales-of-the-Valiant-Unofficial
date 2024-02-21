@@ -39,27 +39,26 @@ from 1 to 12 and will create that number of columns. --}}
       <div class="skills flexcol">
         <h2 class="skills">Skills</h2>
         {{#each system.skills as |skills key|}}
-          {{#unless (eq key 'proficient')}}
-            <div class="skills flexrow flex-group-center">
-              <proficiency-cycle
-                type="skill"
-                name="{{key}}"
-                value="{{skills.profMod}}"
-              >
-                <div>
-                  <input type="number" value="0" />
-                </div>
-              </proficiency-cycle>
-              <label
-                for="system.skills.{{key}}.value"
-                class="resource-label rollable flexlarge align-left"
-                data-roll="d20+@abilities.{{skills.core}}.mod"
-                data-label="{{skills.label}}"
-              >{{skills.label}}</label>
-              <span class="skills-mod">{{numberFormat skills.value decimals=0 sign=true}}</span>
-              <span class="skills-passive">({{skills.passive}})</span>
-            </div>
-          {{/unless}}
+          <div class="skills flexrow flex-group-center">
+            {{#if (eq skills.profType 'none' )}}
+            <button id="proficiencyButton" type="skill" name="{{key}}" value="{{skills.profMod}}" class="none">X
+            {{else if (eq skills.profType 'proficient' )}}
+            <button id="proficiencyButton" type="skill" name="{{key}}" value="{{skills.profMod}}" class="proficient">P
+            {{else if (eq skills.profType 'expert' )}}
+            <button id="proficiencyButton" type="skill" name="{{key}}" value="{{skills.profMod}}" class="expert">E
+            {{else if (eq skills.profType 'half' )}}
+            <button id="proficiencyButton" type="skill" name="{{key}}" value="{{skills.profMod}}" class="half">H
+            {{/if}}
+            </button>
+            <label
+              for="system.skills.{{key}}.value"
+              class="resource-label rollable flexlarge align-left"
+              data-roll="d20+@abilities.{{skills.core}}.mod"
+              data-label="{{skills.label}}"
+            >{{skills.label}}</label>
+            <span class="skills-mod">{{numberFormat skills.value decimals=0 sign=true}}</span>
+            <span class="skills-passive">({{skills.passive}})</span>
+          </div>
         {{/each}}
       </div>
     </aside>

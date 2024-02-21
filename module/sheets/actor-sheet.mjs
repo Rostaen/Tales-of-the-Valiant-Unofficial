@@ -135,32 +135,33 @@ export class TOTVUOActorSheet extends ActorSheet {
       item.sheet.render(true);
     });
     // Changing skill proficiency state
-    html.find('proficiency-cycle[type="skill"]').click((event) => {
-      const actorData = this.actor.toObject(false);
-      const value = $(event.target).attr('value');
-      const key = $(event.target).attr('name');
+    html.find('proficiency-cycle[type="skill"]').click(this._updateProficiency.bind(this));
 
-      const setValues = (event, img, value, name, key) => {
-        $(event.target).css('background-image', `url("../icons/svg/circle-${img}.svg") no-repeat center`);
-        $(event.target).val(value);
-        const actorSkill = actorData.system.skills[key];
-        // console.log(key);
-        // console.log(actorData.system)
-        actorSkill.profMod = value * actorData.system.proficiency.base;
-        actorSkill.profType = name;
-        actorSkill.value += actorSkill.profMod;
-      }
-
-      if(value == 0)
-        setValues(event, 'solid', 1, 'proficient', key);
-      else if(value == 1)
-        setValues(event, 'check-regular', 2, 'expert', key);
-      else if(value == 2)
-        setValues(event, 'half-stroke-solid', 0.5, 'half', key);
-      else
-        setValues(event, 'regular', 0, 'none', key);
-
-      console.log(actorData.system);
+    html.find('button#proficiencyButton').click((event) => {
+      let currentText = event.target.textContent.trim();
+      console.log(currentText);
+      switch(currentText) {
+        case 'X':
+          event.target.textContent = 'P';
+          console.log("Case X");
+          break;
+        case 'P':
+          event.target.textContent = 'E';
+          console.log("Case P");
+          break;
+        case 'E':
+          event.target.textContent = 'H';
+          break;
+        case 'H':
+          event.target.textContent = 'X';
+          break;
+        default:
+          // Reset to 'X' if the current text is unexpected
+          event.target.textContent = 'X';
+          console.log("Default case");
+          break;
+        }
+      console.log("button click");
     });
 
     // -------------------------------------------------------------
@@ -220,6 +221,34 @@ export class TOTVUOActorSheet extends ActorSheet {
 
     // Finally, create the item!
     return await Item.create(itemData, {parent: this.actor});
+  }
+
+  async _updateProficiency(event){
+    let actorData = this.actor.toObject(false);
+    const value = $(event.target).attr('value');
+    const key = $(event.target).attr('name');
+    const actorSkill = actorData.system.skills[key];
+
+    const setValues = (value, name, key) => {
+      actorSkill.profMod = value * actorData.system.proficiency.base;
+      actorSkill.profType = name;
+      actorSkill.value += actorSkill.profMod;
+    }
+
+    // This should rotate through proficiency types 1 > 2 > 0.5 > 0 > 1
+    if(value == 0)
+      setValues(1, 'proficient', key);
+    else if(value == 1)
+      setValues(2, 'expert', key);
+    else if(value == 2)
+      setValues(0.5, 'half', key);
+    else if(value == 0.5)
+      setValues(0, 'none', key);
+
+    console.log(actorData.system.skills);
+    // console.log(this.actor);
+    //actorData.system.render(true);
+    return await Actor.update(actorSkill, {parent: this.actor});
   }
 
   /**

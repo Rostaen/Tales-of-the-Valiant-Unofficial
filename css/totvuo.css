@@ -433,17 +433,26 @@
   border: none;
 }
 
-.character .skills proficiency-cycle{
-  background: url('../icons/svg/circle-regular.svg') no-repeat center;
-  height: 20px;
+.skills proficiency-cycle, .character .stat-prof-check{
+  height: 15px;
+  width: 15px;
   background-size: 15px;
   cursor: pointer;
 }
+.skills proficiency-cycle.none{
+  background: url('../icons/svg/circle-regular.svg') no-repeat center;
+}
+.skills proficiency-cycle.proficient{
+  background: url('../icons/svg/circle-solid.svg') no-repeat center;
+}
+.skills proficiency-cycle.expert{
+  background: url('../icons/svg/circle-check-regular.svg') no-repeat center;
+}
+.skills proficiency-cycle.half{
+  background: url('../icons/svg/circle-half-stroke-solid.svg') no-repeat center;
+}
 .character .stat-prof-check{
   background: url('../icons/svg/circle-regular.svg') no-repeat center;
-  height: 20px;
-  background-size: 15px;
-  cursor: pointer;
 }
 proficiency-cycle input{
   display: none;
